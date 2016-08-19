@@ -11,6 +11,38 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="atf.batteryalert.MainActivity"
     tools:showIn="@layout/activity_main">
-
-
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:background="@drawable/corners"
+        android:theme="@style/AppTheme.RaisedButton"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:text="@string/action_settings"
+        android:id="@+id/settings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="36dp"
+            android:background="@drawable/corners"
+            android:theme="@style/AppTheme.RaisedButton"
+            android:textColor="@color/white"
+            android:text="@string/serviceStart"
+            android:id="@+id/start"
+            android:layout_below="@+id/settings"
+            android:layout_alignLeft="@+id/settings"
+            android:layout_alignStart="@+id/settings"
+            android:layout_marginTop="44dp" />
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="36dp"
+            android:id="@+id/stop"
+            android:background="@drawable/corners"
+            android:theme="@style/AppTheme.RaisedButton"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:text="@string/serviceStop"
+            android:layout_below="@+id/start"
+            android:layout_centerHorizontal="true" />
 </RelativeLayout>

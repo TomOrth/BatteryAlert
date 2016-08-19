@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:preference="http://schemas.android.com/apk/res-auto">
+   <atf.batteryalert.Preferences.NumberPickerPreference
+       android:defaultValue="@integer/defaultValue"
+       android:key="batLvl"
+       android:title="Set Target Battery Level"
+       preference:maxValue="@integer/maxValue"
+       preference:minValue="@integer/minValue"
+       preference:wrapSelectorWheel="false"/>
+   <CheckBoxPreference
+       android:title="Lower Screen Brightness By Half"
+       android:defaultValue="false"
+       android:key="isDim"
+       />
+</PreferenceScreen>

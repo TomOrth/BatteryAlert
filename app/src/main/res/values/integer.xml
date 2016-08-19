@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="defaultValue">50</integer>
+    <integer name="minValue">1</integer>
+    <integer name="maxValue">99</integer>
+</resources>
