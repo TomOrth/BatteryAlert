@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -27,8 +28,9 @@ public class SettingsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected (MenuItem item){
         switch(item.getItemId()){
             case android.R.id.home:
+                Toast.makeText(getBaseContext(), "Settings have been saved", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getBaseContext(), MainActivity.class));
-                Snackbar.make(item.getActionView(), "Settings have been saved", Snackbar.LENGTH_SHORT);
+
 
         }
         return true;
@@ -37,6 +39,7 @@ public class SettingsActivity extends AppCompatActivity {
     public static class SettingsFragment extends PreferenceFragment{
         @Override
         public void onCreate(final Bundle savedInstanceState){
+            super.onCreate(savedInstanceState);
            addPreferencesFromResource(R.xml.preference);
         }
     }

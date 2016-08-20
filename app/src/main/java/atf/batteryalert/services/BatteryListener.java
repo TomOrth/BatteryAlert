@@ -22,12 +22,14 @@ public class BatteryListener extends Service {
         @Override
         public void onReceive(Context context, Intent intent) {
             //TODO: add notification code
+            String msg = "Your phone has reached your desired limit. You should charge your phone now";
             int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
-            if(level <= PreferenceUtil.getLevel(context)) {
+            if(level == PreferenceUtil.getLevel(context)) {
                 NotificationCompat.Builder notify = new NotificationCompat.Builder(context)
                         .setContentTitle("CHARGE PHONE")
-                        .setContentText("Your phone has reached your desired limit. You should charge your phone now")
-                        .setSmallIcon(R.mipmap.ic_launcher);
+                        .setContentText(msg)
+                        .setSmallIcon(R.drawable.ic_stat_icon_hdpi)
+                        .setStyle(new NotificationCompat.BigTextStyle().bigText(msg));
 
                 // Sets an ID for the notification
                 int mNotificationId = 001;
