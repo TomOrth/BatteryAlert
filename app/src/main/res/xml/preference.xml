@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:preference="http://schemas.android.com/apk/res-auto">
-   <atf.batteryalert.Preferences.NumberPickerPreference
+   <atf.batteryalert.preferences.NumberPickerPreference
        android:defaultValue="@integer/defaultValue"
        android:key="batLvl"
        android:title="Set Target Battery Level"

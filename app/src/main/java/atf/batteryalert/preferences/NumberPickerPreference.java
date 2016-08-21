@@ -1,4 +1,4 @@
-package atf.batteryalert.Preferences;
+package atf.batteryalert.preferences;
 
 /**
  * Created by tom on 8/19/16.
