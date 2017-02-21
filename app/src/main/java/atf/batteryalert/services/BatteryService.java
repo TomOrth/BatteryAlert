@@ -21,7 +21,7 @@ import atf.batteryalert.utils.PreferenceUtil;
 /**
  * Created by tom on 8/17/16.
  */
-public class BatteryListener extends Service {
+public class BatteryService extends Service {
     BroadcastReceiver battery = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
