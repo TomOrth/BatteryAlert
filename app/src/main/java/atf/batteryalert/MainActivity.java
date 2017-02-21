@@ -44,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void start(View v){
-        startService(new Intent(getBaseContext(), BatteryListener.class));
+        startService(new Intent(getBaseContext(), BatteryService.class));
         Toast.makeText(getBaseContext(), "Service started", Toast.LENGTH_SHORT).show();
     }
 
     public void stop(View v){
-        stopService(new Intent(getBaseContext(), BatteryListener.class));
+        stopService(new Intent(getBaseContext(), BatteryService.class));
         Toast.makeText(getBaseContext(), "Service stopped", Toast.LENGTH_SHORT).show();
     }
 
